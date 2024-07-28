@@ -11,22 +11,35 @@
     <title>Inveto Investment</title>
 </head>
 <body class="font-google ">
-    <div class="NavBar grid grid-cols-2 items-center py-3  bg-white shadow-5xl px-3 fixed w-full">
-        <div class="logo">
-            <img src="./assets/logo.jpg" alt="" class="h-[4rem]">
+    <div class="NavBar fixed flex flex-col sm:flex-row  sm:justify-between  sm:items-center py-3  bg-white shadow-5xl px-3  w-full">
+        <div class="logo flex ">
+            <img src="./assets/logo.jpg" alt="" class="h-[3rem] md:h-[4rem]">
         </div>
-        <div class="  flex justify-between pr-5">
+        
+        <input type="checkbox" id="navbar-open" class="peer hidden">
+        <label for="navbar-open" class="cursor-pointer absolute right-4 sm:hidden mt-4">
+        <i class=" fa-solid fa-bars"></i>
+    </label>
+
+
+        <div class="peer-checked:block sm:block justify-between pr-5 hidden">
+            <ul class="flex flex-col sm:flex-row gap-y-5 gap-x-4 ">
+                <li><input type="text" name="" id="" class=" border-gray-400 border rounded-2xl px-4 text-sm py-1 mt-4 sm:mt-0" placeholder="search for anything"></li>
+                <li> <a href="#" class=" font-medium hover:border-b-2 hover:border-[#04DBA2]">Home</a></li>
+                <li> <a href="#" class=" font-medium hover:border-b-2 hover:border-[#04DBA2]">Stocks</a></li>
+                <li> <button class=" bg-[#334050] px-5 rounded-2xl text-white py-1">TRY FOR FREE</button></li>
+            </ul>
             <div>
-            <input type="text" name="" id="" class=" border-gray-400 border rounded-2xl px-4 text-sm py-1 " placeholder="search for anything">
-            <!-- <i class="fa-solid fa-magnifying-glass relative text-xs left- right-[28rem] top-4"></i> -->
             
+            <!-- <i class="fa-solid fa-magnifying-glass relative text-xs left- right-[28rem] top-4"></i> -->
         </div>
-            <a href="#" class=" font-medium hover:border-b-2 hover:border-[#04DBA2]">Home</a>
-            <a href="#" class=" font-medium hover:border-b-2 hover:border-[#04DBA2]">Stocks</a>
-            <button class=" bg-[#334050] px-5 rounded-2xl text-white py-1">TRY FOR FREE</button>
+           
+           
+           
         </div>
     </div>
-<div  class="flex px-6 pt-40 pb-14">
+
+<div  class="flex px-6 pt-40 pb:0 sm:pb-14">
     <div class="w-[670px]">
         <p class="text-xl font-bold text-[#B7B7B7] pb-4"><span class="text-[#04DBA2]">#</span>Spend Like a Boss</p>
         <h1 class="text-[#04DBA2] text-6xl font-bold leading-[90px]">Spending Made Easy for Everyone.</h1>
